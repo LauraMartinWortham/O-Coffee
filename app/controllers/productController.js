@@ -1,17 +1,35 @@
-// On va importer notre module client situé dans /modules
-/*const dataMapper = require("../dataMapper");
-const client = require("../modules/client");*/
+const dataMapper = require("../dataMapper");
+const client = require("../modules/client");
 
 const productController = {
-		// Méthode qui sert à afficher la page d'accueil
-		catalog: (req, res) => {
-			// On va vérifier le contenu de la session
-			res.render("catalog");
+		
+		catalog: async (req, res) => {
+			try {
+				const coffees = await dataMapper.getAllCoffees();
+				res.render("catalog", { coffees });
+			}
+			catch{
+				res.status(500).send(`Erreur de notre coté : ${error}`);
+				throw error;
+			}
 		},
 
-		productPage: (req, res) => {
-			// On va vérifier le contenu de la session
-			res.render("product");
+		productPage: async (req, res, next) => {
+			const targetId = Number(req.params.id);
+
+    // Manière de faire avec async / await
+
+    try {
+      const searchedCoffee = await dataMapper.getOneCoffee(targetId);
+      if (!searchedPromo) {
+        // Si pas de promo trouvée, on renvoie une 404 via le middleware approprié
+        return next();
+      }
+      res.render("product", { searchedCoffee });
+    } catch (error) {
+      res.status(500).send(`Erreur de notre côté : ${error}`);
+      throw error;
+    }
 		},
 	};
 

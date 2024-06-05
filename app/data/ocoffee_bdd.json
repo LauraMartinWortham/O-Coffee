@@ -1,0 +1,160 @@
+[
+	{
+		"name": "Espresso",
+		"text": "Café fort et concentré préparé en faisant passer de l'eau chaude à travers du café finement moulu.",
+		"ref": 100955890,
+		"origin": "Italie",
+		"price": "20.99 €",
+		"caracteristic": "Corsé",
+		"disponibility": "Oui"
+	},
+
+	{
+		"name": "Columbian",
+		"text": "Café moyennement corsé avec une acidité vive et une saveur riche.",
+		"ref": 100955894,
+		"origin": "Colombie",
+		"price": "18.75 €",
+		"caracteristic": "Acide",
+		"disponibility": "Oui"
+	},
+
+	{
+		"name": "Ethiopian Yirgacheffe",
+		"text": "Réputé pour son arôme floral, son acidité vive et ses notes de saveur citronnée.",
+		"ref": 105589090,
+		"origin": "Éthiopie",
+		"price": "22.50 €",
+		"caracteristic": "Fruité",
+		"disponibility": "Oui"
+	},
+
+	{
+		"name": "Brazilian Santos",
+		"text": "Café doux et lisse avec un profil de saveur de noisette.",
+		"ref": 134009550,
+		"origin": "Brésil",
+		"price": "17.80 €",
+		"caracteristic": "Doux",
+		"disponibility": "Oui"
+	},
+	{
+		"name": "Guatemalan Antigua",
+		"text": "Café corsé avec des nuances chocolatées et une pointe d'épice.",
+		"ref": 256505890,
+		"origin": "Guatemala",
+		"price": "21.25 €",
+		"caracteristic": "Corsé",
+		"disponibility": "Oui"
+	},
+
+	{
+		"name": "Kenyan AA",
+		"text": "Café complexe connu pour son acidité rappelant le vin et ses saveurs fruitées.",
+		"ref": 295432730,
+		"origin": "Kenya",
+		"price": "23.70 €",
+		"caracteristic": "Acide",
+		"disponibility": "Oui"
+	},
+
+	{
+		"name": "Sumatra Mandheling",
+		"text": "Café profond et terreux avec un corps lourd et une faible acidité.",
+		"ref": 302932754,
+		"origin": "Indonésie",
+		"price": "19.95 €",
+		"caracteristic": "Corsé",
+		"disponibility": "Oui"
+	},
+
+	{
+		"name": "Costa Rican Tarrazu",
+		"text": "Café vif et net avec une finition propre et une acidité vive.",
+		"ref": 327302954,
+		"origin": "Costa Rica",
+		"price": "24.50 €",
+		"caracteristic": "Acide",
+		"disponibility": "Oui"
+	},
+
+	{
+		"name": "Vietnamese Robusta",
+		"text": "Café audacieux et fort avec une saveur robuste distinctive.",
+		"ref": 549549090,
+		"origin": "Vietnam",
+		"price": "16.75 €",
+		"caracteristic": "Épicé",
+		"disponibility": "Oui"
+	},
+
+	{
+		"name": "Tanzanian Peaberry",
+		"text": "Acidité vive avec un profil de saveur rappelant le vin et un corps moyen.",
+		"ref": 582954954,
+		"origin": "Tanzanie",
+		"price": "26.80 €",
+		"caracteristic": "Fruité",
+		"disponibility": "Oui"
+	},
+
+	{
+		"name": "Jamaican Blue Mountain",
+		"text": "Reconnu pour sa saveur douce, son acidité vive et son absence d'amertume.",
+		"ref": 589100954,
+		"origin": "Jamaïque",
+		"price": "39.25 €",
+		"caracteristic": "Doux",
+		"disponibility": "Oui"
+	},
+
+	{
+		"name": "Rwandan Bourbon",
+		"text": "Café avec des notes florales prononcées, une acidité vive et un corps moyen.",
+		"ref": 650753915,
+		"origin": "Rwanda",
+		"price": "21.90 €",
+		"caracteristic": "Fruité",
+		"disponibility": "Oui"
+	},
+
+	{
+		"name": "Panamanian Geisha",
+		"text": "Café rare aux arômes floraux complexes, une acidité brillante et un profil de saveur distinctif.",
+		"ref": 795501340,
+		"origin": "Panama",
+		"price": "42.00 €",
+		"caracteristic": "Fruité",
+		"disponibility": "Oui"
+	},
+
+	{
+		"name": "Peruvian Arabica",
+		"text": "Café équilibré avec des notes de chocolat, une acidité modérée et un corps velouté.",
+		"ref": 954589100,
+		"origin": "Pérou",
+		"price": "19.40 €",
+		"caracteristic": "Chocolaté",
+		"disponibility": "Non"
+	},
+
+	{
+		"name": "Hawaiian Kona",
+		"text": "Café rare au goût riche, une acidité douce et des nuances subtiles.",
+		"ref": 958090105,
+		"origin": "Hawaï",
+		"price": "55.75 €",
+		"caracteristic": "Doux",
+		"disponibility": "Non"
+	},
+
+	{
+		"name": "Nicaraguan Maragogipe",
+		"text": "Café avec des notes de fruits, une acidité vive et un corps plein.",
+		"ref": 691550753,
+		"origin": "Nicaragua",
+		"price": "28.60 €",
+		"caracteristic": "Fruité",
+		"disponibility": "Non"
+	}
+]
