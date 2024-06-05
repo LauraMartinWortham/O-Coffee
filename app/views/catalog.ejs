@@ -12,30 +12,15 @@
 				<option value="1">Category 3</option>
 			</select>
 			<div class="product_list only-display-3-articles">
+
+				<% coffees.forEach(coffee => {  %>
 				<article class="product">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quibusdam aspernatur amet quisquam dicta iusto fugiat fuga ratione possimus? Assumenda possimus fugiat quas optio, similique dolorum debitis. Nesciunt, modi incidunt!</p>
-					<button class="button_secondary"><a href="/catalogue/product">Découvrir</a></button>
+					<img src="/public/images/coffees/<%=coffee.ref%>.png" alt="">
+					<h3><%=coffee.name%></h3>
+					<p><%=coffee.text%></p>
+					<button class="button_secondary"><a href="/catalogue/product/<%=coffee.id%>">Découvrir</a></button>
 				</article>
-				<article class="product">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quibusdam aspernatur amet quisquam dicta iusto fugiat fuga ratione possimus? Assumenda possimus fugiat quas optio, similique dolorum debitis. Nesciunt, modi incidunt!</p>
-					<button class="button_secondary"><a href="/catalogue/product">Découvrir</a></button>
-				</article>
-				<article class="product">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quibusdam aspernatur amet quisquam dicta iusto fugiat fuga ratione possimus? Assumenda possimus fugiat quas optio, similique dolorum debitis. Nesciunt, modi incidunt!</p>
-					<button class="button_secondary"><a href="/catalogue/product">Découvrir</a></button>
-				</article>
-				<article class="product">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quibusdam aspernatur amet quisquam dicta iusto fugiat fuga ratione possimus? Assumenda possimus fugiat quas optio, similique dolorum debitis. Nesciunt, modi incidunt!</p>
-					<button class="button_secondary"><a href="/catalogue/product">Découvrir</a></button>
-				</article>
-				<article class="product">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quibusdam aspernatur amet quisquam dicta iusto fugiat fuga ratione possimus? Assumenda possimus fugiat quas optio, similique dolorum debitis. Nesciunt, modi incidunt!</p>
-					<button class="button_secondary"><a href="/catalogue/product">Découvrir</a></button>
-				</article>
-				<article class="product">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quibusdam aspernatur amet quisquam dicta iusto fugiat fuga ratione possimus? Assumenda possimus fugiat quas optio, similique dolorum debitis. Nesciunt, modi incidunt!</p>
-					<button class="button_secondary"><a href="/catalogue/product">Découvrir</a></button>
-				</article>
+			  <% }) %>
 			</div>
 			<button class="button_secondary">Voir tout</button>
 		</section>

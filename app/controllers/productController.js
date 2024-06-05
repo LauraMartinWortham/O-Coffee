@@ -19,17 +19,17 @@ const productController = {
 
     // Manière de faire avec async / await
 
-    try {
-      const searchedCoffee = await dataMapper.getOneCoffee(targetId);
-      if (!searchedPromo) {
-        // Si pas de promo trouvée, on renvoie une 404 via le middleware approprié
-        return next();
-      }
-      res.render("product", { searchedCoffee });
-    } catch (error) {
-      res.status(500).send(`Erreur de notre côté : ${error}`);
-      throw error;
-    }
+			try {
+				const searchedCoffee = await dataMapper.getOneCoffee(targetId);
+				if (!searchedCoffee) {
+					// Si pas de promo trouvée, on renvoie une 404 via le middleware approprié
+					return next();
+				}
+				res.render("product", { searchedCoffee });
+			} catch (error) {
+				res.status(500).send(`Erreur de notre côté : ${error}`);
+				throw error;
+			}
 		},
 	};
 

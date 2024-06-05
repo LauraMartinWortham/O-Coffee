@@ -2,11 +2,14 @@
 	<!--Contenu de la page-->
 	<main>
 		<section class="product_page">
-			<img src="/public/images/coffees/302932754.png" alt="image_produit">
+			<img src="/public/images/coffees/<%=searchedCoffee.ref%>.png" alt="image_produit">
 			<article class="product_info">
 			<time datetime="2018-07-07"">Publié le <%= Date() %></time>
-				<h2>Nom du produit</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nulla nesciunt sit! Voluptate tempora ipsam voluptatem necessitatibus modi atque dolore distinctio, ullam quos debitis? Numquam maxime aut iste corporis fuga!</p>
+				<h2><%=searchedCoffee.name%></h2>
+				<p><%=searchedCoffee.text%></p>
+				<p>Origine : <%=searchedCoffee.origin%> </p>
+				<p>Charactéristique principale : <%=searchedCoffee.caracteristic%></p>
+				<p>Prix au Kg : <%=searchedCoffee.price_kg%> </p>
 				<button class="button_main"> <a href="/catalogue">Catalogue</a></button>
 			</article>
 		</section>

@@ -1,12 +1,17 @@
-// On déclare un nouveau controller
-// qui va me servir à gérer la page d'accueil
-const mainController = {
-  // Méthode qui sert à afficher la page d'accueil
-  home: (req, res) => {
-    // On va vérifier le contenu de la session
-    res.render("home");
+const dataMapper = require("../dataMapper");
+const client = require("../modules/client");
+
+const mainController = { 
+  home: async (req, res) => {
+    try {
+      const news = await dataMapper.getThreeLast();
+      res.render("home", { news });
+    }
+    catch{
+      res.status(500).send(`Erreur de notre coté : ${error}`);
+      throw error;
+    }
   },
 };
 
-// On n'oublie pas d'exporter notre mainController
 module.exports = mainController;

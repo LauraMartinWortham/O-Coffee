@@ -8,7 +8,7 @@ const router = express.Router();
 router.get("/", mainController.home);
 
 router.get("/catalogue", productController.catalog);
-router.get("/catalogue/product", productController.productPage);
+router.get("/catalogue/product/:id", productController.productPage);
 
 
 module.exports = router;
