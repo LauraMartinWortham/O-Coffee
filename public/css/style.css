@@ -26,7 +26,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	font-weight: bold;
-	font-size: 0.2rem;
+	font-size: 3.2rem;
 }
 
 header button {
@@ -38,15 +38,16 @@ header button {
 	cursor: pointer;
 }
 
-.title_nav {
+header ul {
 	font-size: medium;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	gap: 8px;
-	
 }
+
+
 
 .title {
 	display: flex;
@@ -63,6 +64,63 @@ h1 {
 .title img{
 	height: 5.0rem;
 	width: 5.0rem;
+}
+
+/*Burger menu*/
+header button {
+  background-color: inherit;
+  color: #f3efe8;
+  height: 3rem;
+
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1280px) {
+  /* Hide "menu button" on large screen by default */
+  header button {
+      display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /* Hide all menu links on small screen by default */
+  header ul {
+    display: none;
+  }
+}
+
+/* When navbar is expanded, re-order stuff */
+header nav.expanded {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+	z-index: 1;
+  width: 60vw;
+  height: 100%;
+  padding: 1rem 2rem;
+  gap: 2rem;
+
+  color: #f3efe8;
+  background-color: #745630;
+
+  animation: menu-slide-in 0.3s;
+}
+
+header nav.expanded ul {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+	font-size: 2.4rem;
+}
+
+header nav.expanded a {
+  color: inherit;
 }
 
 /*Commun*/
@@ -109,6 +167,7 @@ h3{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 18px;
+	max-width: 500px;
 }
 
 
@@ -275,7 +334,7 @@ footer {
 	margin-bottom: 12px;
 }
 
-@media (min-width: 426px) {
+@media (min-width: 1280px) {
 	
 	main {
 		padding: 2.4rem 6.0rem;

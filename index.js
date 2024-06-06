@@ -2,9 +2,13 @@
 require("dotenv").config();
 const express = require("express");
 const router = require("./app/router");
+const dayjs = require('dayjs');
 
 // On appelle une instanciation d'Express
 const app = express();
+const localizedFormat = require('dayjs/plugin/localizedFormat')
+dayjs.extend(localizedFormat)
+
 
 // Configuration du moteur de templates
 app.set("views", "./app/views");

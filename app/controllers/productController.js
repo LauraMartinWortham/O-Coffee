@@ -1,3 +1,4 @@
+const dayjs = require("dayjs");
 const dataMapper = require("../dataMapper");
 const client = require("../modules/client");
 
@@ -20,12 +21,13 @@ const productController = {
     // Manière de faire avec async / await
 
 			try {
+				const date = dayjs().format ('L');
 				const searchedCoffee = await dataMapper.getOneCoffee(targetId);
 				if (!searchedCoffee) {
 					// Si pas de promo trouvée, on renvoie une 404 via le middleware approprié
 					return next();
 				}
-				res.render("product", { searchedCoffee });
+				res.render("product", { searchedCoffee, date });
 			} catch (error) {
 				res.status(500).send(`Erreur de notre côté : ${error}`);
 				throw error;
