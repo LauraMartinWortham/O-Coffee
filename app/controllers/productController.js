@@ -7,7 +7,8 @@ const productController = {
 		catalog: async (req, res) => {
 			try {
 				const coffees = await dataMapper.getAllCoffees();
-				res.render("catalog", { coffees });
+				const categories = await dataMapper.getAllCategories();
+				res.render("catalog", { coffees, categories });
 			}
 			catch{
 				res.status(500).send(`Erreur de notre coté : ${error}`);

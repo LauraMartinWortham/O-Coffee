@@ -20,10 +20,10 @@ const dataMapper = {
     return result.rows[0];
   },
 
-	getAllCategory: async () => {
-    const sql = `SELECT * FROM coffee`;
+	getAllCategories: async () => {
+    const sql = `SELECT caracteristic FROM coffee GROUP BY caracteristic`;
     const result = await client.query(sql);
-    return result.rows[0];
+    return result.rows;
   },
 
 

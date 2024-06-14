@@ -7,14 +7,15 @@
 		</section>
 		<section class="catalog">
 			<select name="category" id="category">
-				<option value="1">Category 1</option>
-				<option value="1">Category 2</option>
-				<option value="1">Category 3</option>
+				<option value="1">Tous</option>
+				<% categories.forEach(category => {  %>
+				<option><%=category.caracteristic%></option>
+			  <% }) %>
 			</select>
 			<div class="product_list only-display-3-articles" id="catalog_list">
 
 				<% coffees.forEach(coffee => {  %>
-				<article class="product">
+				<article class="product <%=coffee.caracteristic.toLowerCase()%>">
 					<img src="/public/images/coffees/<%=coffee.ref%>.png" alt="">
 					<h3><%=coffee.name%></h3>
 					<p><%=coffee.text%></p>
